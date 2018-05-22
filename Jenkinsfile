@@ -7,7 +7,7 @@ node{
         sh 'mvn clean install'
 
     }
-    stag('show artifacts'){
+    stage('show artifacts'){
         archiveArtifacts 'webapp/target/openmrs.war'
     }
 
